@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('background.jpg'); /* Add your image path here */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Fix the background image position */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+#library-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Adds space between cards */
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1); /* Softer shadow */
+    transition: 0.3s;
+    width: 250px;
+    background: #ffffff; /* Card background */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for cards */
+    display: flex;
+    flex-direction: column; /* Stack card content vertically */
+}
+
+.card:hover {
+    box-shadow: 0 12px 18px 0 rgba(0,0,0,0.2); /* Larger hover shadow */
+}
+
+.title, .author, .pages, .read {
+    margin-bottom: 10px; /* Space between elements */
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; /* Darker text for better readability */
+}
+
+.author {
+    font-size: 16px;
+    color: #666; /* Subtle grey for the author */
+}
+
+.pages, .read {
+    font-size: 14px;
+    color: #888; /* Even lighter grey for less important info */
+}
+
+.read {
+    color: #007bff; /* A more vibrant blue for the 'read' status */
+}
+
+#addBookBtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none; /* Remove focus outline */
+}
+
+#addBookBtn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#bookForm {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    margin: 20px auto; /* Center the form */
+    display: none; /* Keep it hidden until needed */
+}
+
+#bookForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+#bookForm input, #bookForm select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none; /* Remove focus outline */
+}
+
+#bookForm button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#bookForm button:hover {
+    background-color: #218838; /* Darker green on hover */
+}

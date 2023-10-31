@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>"Timendi Causa Est Nescire" - Seneca</h1> <!-- Page heading -->
+    <div id="library-container"></div>
+    <div id="form-container">
+        <button id="addBookBtn">Add New Book</button>
+        <div id="bookForm">
+            <form>
+                <input type="text" id="title" placeholder="Title">
+                <input type="text" id="author" placeholder="Author">
+                <input type="number" id="pages" placeholder="Pages">
+                <select id="read">
+                    <option value="not read yet">Not read yet</option>
+                    <option value="read">Read</option>
+                </select>
+                <button type="button" onclick="addBookFromForm()">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
